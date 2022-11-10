@@ -24,19 +24,17 @@ button.addEventListener('click', () => {
     document.querySelector('span').innerText = randomColor;
 
     let luminance = chroma(randomColor).luminance();
-    console.log(randomColor,luminance)
 
-    console.log(document.getElementById('btn'));
-
-
-        document.querySelector('h2').style.color = luminance > 0.5 ? 'white' : 'black';
-        document.querySelector('h2').style.backgroundColor = luminance < 0.5 ? 'white' : 'black';
-
-    
+    document.querySelector('h2').style.color = luminance > 0.5 ? 'white' : 'black';
+    document.querySelector('h2').style.backgroundColor = luminance < 0.5 ? 'white' : 'black';
 });
 
+// copy color code on click
 const colorCode = document.querySelector('span');
 colorCode.addEventListener('click', () => {
     copyText(colorCode.innerText);
 })
+
+//TODO: add has to link
+//TODO: change color depend on hash in link
 
