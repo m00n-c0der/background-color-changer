@@ -24,13 +24,18 @@ body {
     color: aliceblue;
     font-size: 32px;
     margin-bottom: 24px;
+    border: rgba(1, 1, 1, 0.5) solid 2px;
+}
+
+.container h2 span {
+    cursor: copy;
 }
 
 .color {
     color: aqua;
 }
 
-.button {
+.btn {
     background-color: transparent;
     padding: 12px;
     border: 2px solid #222;
@@ -42,7 +47,7 @@ body {
     cursor: pointer;
 }
 
-.button:hover {
+.btn:hover {
     background-color: #222;
     color: aliceblue;
     transition: all 0.2s ease-in-out;
